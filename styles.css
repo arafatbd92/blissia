@@ -1,0 +1,347 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Transition Effects */
+.nav-link, .btn, .social-icon, .contact-item {
+    transition: all 0.3s ease;
+}
+
+/* Topbar Styles */
+.topbar {
+    background: white;
+    color: #314465;
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    color: #a7c724;
+    transform: translateY(-2px);
+}
+
+.contact-item i {
+    color: #a7c724;
+}
+
+.topbar-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: #a7c724;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #8ba61a;
+    color: white;
+    transform: scale(1.1) rotate(5deg);
+}
+
+.login-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login {
+    background: transparent;
+    color: #314465;
+    border: 2px solid #a7c724;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background: #a7c724;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(167, 199, 36, 0.3);
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(135deg, #314465 0%, #4a5f7a 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    padding: 10px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    max-width: 200px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover .logo-image {
+    transform: scale(1.05);
+}
+
+.navbar-nav {
+    gap: 5px;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 10px 15px !important;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #a7c724;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::before {
+    width: 80%;
+}
+
+.nav-link:hover {
+    color: #a7c724 !important;
+    background: rgba(167, 199, 36, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Swiper Slider Styles */
+.swiper-container {
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    position: relative;
+}
+
+.swiper-slide {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    animation: zoomIn 5s ease-out forwards;
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Reset animation for each new slide */
+.swiper-slide-active img {
+    animation: zoomIn 5s ease-out forwards;
+}
+
+/* Enhanced Fade Effect */
+.swiper-slide {
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swiper-slide-active {
+    opacity: 1;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+    opacity: 0;
+}
+
+/* Swiper Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background: rgba(167, 199, 36, 0.9);
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(167, 199, 36, 1);
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(167, 199, 36, 0.4);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Swiper Pagination Dots */
+.swiper-pagination {
+    bottom: 30px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background: #a7c724;
+    transform: scale(1.2);
+}
+
+.swiper-pagination-bullet:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+}
+
+/* Swiper Scrollbar */
+.swiper-scrollbar {
+    background: rgba(255, 255, 255, 0.2);
+    height: 4px;
+}
+
+.swiper-scrollbar-drag {
+    background: #a7c724;
+    border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .topbar-right {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .swiper-container {
+        height: 60vh;
+        min-height: 400px;
+    }
+    
+    .slide-content {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .slide-content h2 {
+        font-size: 2rem;
+    }
+    
+    .slide-content p {
+        font-size: 1rem;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 1rem;
+    }
+    
+    .swiper-pagination {
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .swiper-container {
+        height: 50vh;
+        min-height: 350px;
+    }
+    
+    .slide-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .slide-content p {
+        font-size: 0.9rem;
+    }
+    
+    .slide-btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+} 
