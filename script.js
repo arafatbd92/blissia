@@ -217,3 +217,98 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Bliss International Academy website loaded successfully!');
 }); 
+
+// Modal functionality for Read More buttons
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all read more buttons
+    const readMoreButtons = document.querySelectorAll('.read-more-btn');
+    
+    // Add click event listeners to each button
+    readMoreButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const title = this.getAttribute('data-title');
+            const content = this.getAttribute('data-content');
+            
+            // Update modal content
+            document.getElementById('detailModalLabel').textContent = title;
+            document.getElementById('modalContent').textContent = content;
+        });
+    });
+    
+    // Optional: Add smooth scrolling to modal content
+    const modalContentScroll = document.querySelector('.modal-content-scroll');
+    if (modalContentScroll) {
+        modalContentScroll.style.scrollBehavior = 'smooth';
+    }
+}); 
+
+// Accordion functionality for Latest Updates
+document.addEventListener('DOMContentLoaded', function() {
+    // Accordion button click handlers
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+    
+    accordionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const icon = this.querySelector('.update-icon');
+            const isCollapsed = this.classList.contains('collapsed');
+            
+            // Reset all icons to plus
+            accordionButtons.forEach(btn => {
+                const btnIcon = btn.querySelector('.update-icon');
+                btnIcon.className = 'fas fa-plus update-icon';
+            });
+            
+            // Change icon based on state
+            if (isCollapsed) {
+                icon.className = 'fas fa-minus update-icon';
+            } else {
+                icon.className = 'fas fa-plus update-icon';
+            }
+        });
+    });
+    
+
+}); 
+
+// PDF functionality functions
+function downloadPDF(pdfPath, filename) {
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+function printPDF(pdfPath) {
+    const printWindow = window.open(pdfPath, '_blank');
+    printWindow.onload = function() {
+        printWindow.print();
+    };
+}
+
+// Update accordion functionality to work with new PDF structure
+document.addEventListener('DOMContentLoaded', function() {
+    // Accordion button click handlers
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+    
+    accordionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const icon = this.querySelector('.update-icon');
+            const isCollapsed = this.classList.contains('collapsed');
+            
+            // Reset all icons to plus
+            accordionButtons.forEach(btn => {
+                const btnIcon = btn.querySelector('.update-icon');
+                btnIcon.className = 'fas fa-plus update-icon';
+            });
+            
+            // Change icon based on state
+            if (isCollapsed) {
+                icon.className = 'fas fa-minus update-icon';
+            } else {
+                icon.className = 'fas fa-plus update-icon';
+            }
+        });
+    });
+}); 
