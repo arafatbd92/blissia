@@ -108,7 +108,7 @@ body {
     background: linear-gradient(135deg, #314465 0%, #4a5f7a 100%);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;    
 }
 
 .navbar.scrolled {
@@ -1331,6 +1331,295 @@ body {
     
     .filter-btn {
         width: 200px;
+    }
+} 
+
+/* Basic Info Section Styles */
+.basic-info-section {
+    background: white;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.info-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 200px;
+}
+
+/* Logo Circle (EIIN) */
+.logo-circle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-outer-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #314465;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #314465;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.logo-inner-circle {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #dc3545;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.logo-building {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.logo-text {
+    font-size: 0.5rem;
+    text-align: center;
+    line-height: 1.1;
+}
+
+/* Geometric Logo (International School Awards) */
+.logo-geometric {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.geometric-shape {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #6c757d, #adb5bd);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Shield Logo (Cambridge) */
+.logo-shield {
+    position: relative;
+    width: 60px;
+    height: 70px;
+    background: #dc3545;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shield-quarter {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffc107;
+    font-size: 0.8rem;
+}
+
+.shield-quarter.top-left {
+    top: 0;
+    left: 0;
+    background: #dc3545;
+}
+
+.shield-quarter.top-right {
+    top: 0;
+    right: 0;
+    background: #dc3545;
+}
+
+.shield-quarter.bottom-left {
+    bottom: 0;
+    left: 0;
+    background: #dc3545;
+}
+
+.shield-quarter.bottom-right {
+    bottom: 0;
+    right: 0;
+    background: #dc3545;
+}
+
+.shield-center {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background: #f8f9fa;
+    left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shield-crosses {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    color: #dc3545;
+    font-size: 0.6rem;
+}
+
+/* Info Text */
+.info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.info-label {
+    color: #314465;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-value {
+    color: #314465;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.info-code {
+    color: #666;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-panel {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    .info-item {
+        min-width: auto;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .logo-circle,
+    .logo-geometric,
+    .logo-shield {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .logo-shield {
+        height: 60px;
+    }
+    
+    .logo-outer-ring {
+        font-size: 0.5rem;
+    }
+    
+    .logo-inner-circle {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .logo-building {
+        font-size: 1rem;
+    }
+    
+    .logo-text {
+        font-size: 0.4rem;
+    }
+    
+    .geometric-shape {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .shield-quarter {
+        font-size: 0.6rem;
+    }
+    
+    .shield-crosses {
+        font-size: 0.5rem;
+    }
+    
+    .info-label {
+        font-size: 0.8rem;
+    }
+    
+    .info-value {
+        font-size: 0.8rem;
+    }
+    
+    .info-code {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-panel {
+        padding: 1rem;
+    }
+    
+    .logo-circle,
+    .logo-geometric,
+    .logo-shield {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .logo-shield {
+        height: 55px;
+    }
+    
+    .logo-inner-circle {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .geometric-shape {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
     }
 } 
 
