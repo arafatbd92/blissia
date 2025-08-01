@@ -14,24 +14,29 @@
     <div class="topbar">
         <div class="container">
             <div class="topbar-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-label">Call Us</span>
-                        <span class="contact-value">+880 1700110011</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">Email</span>
-                        <span class="contact-value">info@blissia.edu.bd</span>
-                    </div>
+                <div class="brand-logo">
+                    <img src="assets/images/logo.png" alt="Bliss International Academy Logo" class="brand-logo-image">
                 </div>
                 <div class="social-icons">
                     <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                 </div>
-                <div class="login-buttons">
-                    <a href="#" class="btn btn-login">Teacher's Login</a>
-                    <a href="#" class="btn btn-login">Student Login</a>
+                <div class="contact-info">
+                    <div class="hotline-label-main">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>HOTLINE</span>
+                    </div>
+                    <div class="hotline-numbers">
+                        <div class="hotline-item">
+                            <span class="campus-label">Satkhira:</span>
+                            <a href="tel:01766554433" class="hotline-number">01766554433</a>
+                        </div>
+                        <div class="hotline-item">
+                            <span class="campus-label">Debhata:</span>
+                            <a href="tel:01788990011" class="hotline-number">01788990011</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,18 +45,12 @@
     <!-- Navbar Section -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <div class="logo">
-                    <img src="assets/images/logo.png" alt="Bliss International Academy Logo" class="logo-image">
-                </div>
-            </a>
-            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About BIA</a>
                     </li>
@@ -156,174 +155,85 @@
         </div>
     </section>
 
-    <!-- Student Alumni Section -->
-    <section class="alumni-section py-5">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Student Alumni</h2>
-                <p class="section-subtitle">Celebrating our outstanding graduates and their achievements</p>
-            </div>
-            
-            <div class="alumni-filters">
-                <button class="filter-btn active" data-filter="all">All Alumni</button>
-                <button class="filter-btn" data-filter="hifz">Hifz Alumni</button>
-                <button class="filter-btn" data-filter="academic">Academic Excellence</button>
-                <button class="filter-btn" data-filter="sports">Sports Champions</button>
-            </div>
+                <!-- Event Section -->
+            <section class="event-section py-5">
+                <div class="container">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title">Past Events</h2>
+                    </div>
+                    
+                    <div class="row">
+                        <!-- Event Card 1 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="event-card">
+                                <div class="event-image">
+                                    <img src="assets/images/slider1.jpg" alt="Annual Sports Day" class="event-img">
+                                    <div class="event-overlay">
+                                        <div class="event-date">
+                                            <span class="day">15</span>
+                                            <span class="month">Dec</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-content">
+                                    <h3 class="event-title">Annual Sports Day 2024</h3>
+                                    <p class="event-detail">An exciting day of sports, competitions, and fun activities. Students participated in various athletic events showcasing their talents and sportsmanship.</p>
+                                    <button class="event-read-more" data-event="sports-day">
+                                        <span>Read More</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="alumni-grid">
-                <!-- Hifz Alumni -->
-                <div class="alumni-card" data-category="hifz">
-                    <div class="alumni-image">
-                        <img src="assets/images/student.jpg" alt="Abdul-Al-Siam" class="alumni-img">
-                        <div class="alumni-overlay">
-                            <div class="alumni-badge">
-                                <i class="fas fa-star"></i>
-                                <span>Hifz Graduate</span>
+                        <!-- Event Card 2 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="event-card">
+                                <div class="event-image">
+                                    <img src="assets/images/slider2.jpg" alt="Science Fair" class="event-img">
+                                    <div class="event-overlay">
+                                        <div class="event-date">
+                                            <span class="day">22</span>
+                                            <span class="month">Dec</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-content">
+                                    <h3 class="event-title">Annual Science Fair</h3>
+                                    <p class="event-detail">Students explored the fascinating world of science through innovative projects, experiments, and demonstrations showcasing their scientific discoveries and creativity.</p>
+                                    <button class="event-read-more" data-event="science-fair">
+                                        <span>Read More</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event Card 3 -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="event-card">
+                                <div class="event-image">
+                                    <img src="assets/images/slider3.jpg" alt="Cultural Program" class="event-img">
+                                    <div class="event-overlay">
+                                        <div class="event-date">
+                                            <span class="day">28</span>
+                                            <span class="month">Dec</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-content">
+                                    <h3 class="event-title">Cultural Program & Awards</h3>
+                                    <p class="event-detail">A celebration of our diverse culture through music, dance, drama, and poetry. The event also included the annual awards ceremony recognizing outstanding achievements.</p>
+                                    <button class="event-read-more" data-event="cultural-program">
+                                        <span>Read More</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="alumni-content">
-                        <h3 class="alumni-name">Abdul-Al-Siam</h3>
-                        <p class="alumni-description">Student of Class 6 Hifz</p>
-                        <p class="alumni-year">Passing Year 2024</p>
-                        <div class="alumni-achievements">
-                            <span class="achievement-tag">Quran Memorization</span>
-                            <span class="achievement-tag">Academic Excellence</span>
-                        </div>
-                    </div>
                 </div>
-
-                <div class="alumni-card" data-category="hifz">
-                    <div class="alumni-image">
-                        <img src="assets/images/student.jpg" alt="Abdul-Hakim-Abid" class="alumni-img">
-                        <div class="alumni-overlay">
-                            <div class="alumni-badge">
-                                <i class="fas fa-star"></i>
-                                <span>Hifz Graduate</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="alumni-content">
-                        <h3 class="alumni-name">Abdul-Hakim-Abid</h3>
-                        <p class="alumni-description">Student of Class 6 Hifz</p>
-                        <p class="alumni-year">Passing Year 2024</p>
-                        <div class="alumni-achievements">
-                            <span class="achievement-tag">Quran Memorization</span>
-                            <span class="achievement-tag">Academic Excellence</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="alumni-card" data-category="hifz">
-                    <div class="alumni-image">
-                        <img src="assets/images/student.jpg" alt="Abdullah-Al-Mihadul-Haque" class="alumni-img">
-                        <div class="alumni-overlay">
-                            <div class="alumni-badge">
-                                <i class="fas fa-star"></i>
-                                <span>Hifz Graduate</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="alumni-content">
-                        <h3 class="alumni-name">Abdullah-Al-Mihadul-Haque</h3>
-                        <p class="alumni-description">Student of Class 6 Hifz</p>
-                        <p class="alumni-year">Passing Year 2024</p>
-                        <div class="alumni-achievements">
-                            <span class="achievement-tag">Quran Memorization</span>
-                            <span class="achievement-tag">Academic Excellence</span>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-                <!-- Academic Excellence Alumni -->
-                <div class="alumni-card" data-category="academic">
-                    <div class="alumni-image">
-                        <img src="assets/images/student.jpg" alt="Aisha Rahman" class="alumni-img">
-                        <div class="alumni-overlay">
-                            <div class="alumni-badge">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>Academic Excellence</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="alumni-content">
-                        <h3 class="alumni-name">Aisha Rahman</h3>
-                        <p class="alumni-description">Class 10 Graduate</p>
-                        <p class="alumni-year">Passing Year 2024</p>
-                        <div class="alumni-achievements">
-                            <span class="achievement-tag">Top Performer</span>
-                            <span class="achievement-tag">Science Olympiad</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="alumni-card" data-category="academic">
-                    <div class="alumni-image">
-                        <img src="assets/images/student.jpg" alt="Ahmed Khan" class="alumni-img">
-                        <div class="alumni-overlay">
-                            <div class="alumni-badge">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>Academic Excellence</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="alumni-content">
-                        <h3 class="alumni-name">Ahmed Khan</h3>
-                        <p class="alumni-description">Class 12 Graduate</p>
-                        <p class="alumni-year">Passing Year 2024</p>
-                        <div class="alumni-achievements">
-                            <span class="achievement-tag">Merit List</span>
-                            <span class="achievement-tag">Mathematics Champion</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sports Champions -->
-                <div class="alumni-card" data-category="sports">
-                    <div class="alumni-image">
-                        <img src="assets/images/student.jpg" alt="Fatima Ali" class="alumni-img">
-                        <div class="alumni-overlay">
-                            <div class="alumni-badge">
-                                <i class="fas fa-trophy"></i>
-                                <span>Sports Champion</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="alumni-content">
-                        <h3 class="alumni-name">Fatima Ali</h3>
-                        <p class="alumni-description">Class 9 Student</p>
-                        <p class="alumni-year">Achievement Year 2024</p>
-                        <div class="alumni-achievements">
-                            <span class="achievement-tag">Swimming Champion</span>
-                            <span class="achievement-tag">District Winner</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="alumni-stats">
-                <div class="stat-item">
-                    <div class="stat-number">150+</div>
-                    <div class="stat-label">Total Alumni</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">25</div>
-                    <div class="stat-label">Hifz Graduates</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">45</div>
-                    <div class="stat-label">Academic Excellence</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">30</div>
-                    <div class="stat-label">Sports Champions</div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
     <!-- Latest Updates Section -->
     <section class="latest-updates-section py-5">
@@ -416,6 +326,60 @@
         </div>
     </section>
 
+    <!-- Video Section -->
+    <section class="video-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Our Videos</h2>
+            </div>
+            
+            <div class="video-container">
+                <!-- Video Item 1 -->
+                <div class="video-item active" data-video-id="dQw4w9WgXcQ">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="School Annual Day Celebration" class="thumbnail-img">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-overlay"></div>
+                    </div>
+                </div>
+
+                <!-- Video Item 2 -->
+                <div class="video-item" data-video-id="9bZkp7q19f0">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="Science Fair Exhibition" class="thumbnail-img">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-overlay"></div>
+                    </div>
+                </div>
+
+                <!-- Video Item 3 -->
+                <div class="video-item" data-video-id="jNQXAC9IVRw">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/jNQXAC9IVRw/maxresdefault.jpg" alt="Sports Day Highlights" class="thumbnail-img">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-overlay"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Navigation Controls -->
+            <div class="video-controls">
+                <button class="video-nav-btn prev-btn" id="prevVideo">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="video-nav-btn next-btn" id="nextVideo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- Basic Info Section -->
     <section class="basic-info-section py-5">
         <div class="container">
@@ -497,14 +461,17 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <!-- About BLISSIA Column -->
+                <!-- important Links Column -->
                 <div class="footer-column">
-                    <h3 class="footer-title">ABOUT BLISSIA</h3>
-                    <div class="footer-about">
-                        <div class="footer-details">
-                            <p>Bliss International Academy is committed to providing quality education and fostering academic excellence. We strive to develop well-rounded individuals who are prepared for future challenges.</p>                            
-                        </div>
-                    </div>
+                    <h3 class="footer-title">Important Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#admission">Jashore Board</a></li>
+                        <li><a href="#academics">Ministry of Education</a></li>
+                        <li><a href="#campus">NCTB</a></li>
+                        <li><a href="#results">Cambridge University Press</a></li>
+                        <li><a href="#student-affairs">Oxford University Press</a></li>
+                        <li><a href="#contact">Teachers Portal</a></li>
+                    </ul>
                 </div>
 
                 <!-- Useful Links Column -->
@@ -522,7 +489,7 @@
 
                 <!-- Campus-1 Column -->
                 <div class="footer-column">
-                    <h3 class="footer-title">Campus-1 (Head Office)</h3>
+                    <h3 class="footer-title">Campus-1</h3>
                     <div class="footer-contact">
                         <div class="contact-item">
                             <span class="contact-label">ADDRESS</span>
@@ -566,7 +533,7 @@
                         <span>Cambridge Registration Number BD000</span>
                     </div>
                     <div class="footer-bottom-center">
-                        <span>Copyright © 2025 Bliss International Academy. All rights reserved</span>
+                        <span>Copyright © 2025 BLISSIA. All rights reserved</span>
                     </div>
                     <div class="footer-bottom-right">
                         <div class="footer-social-icons">
@@ -579,6 +546,8 @@
             </div>
         </div>
     </footer>
+
+
 
     <!-- Detail Modal -->
     <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
