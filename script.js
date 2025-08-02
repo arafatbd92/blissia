@@ -2,52 +2,53 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // Navbar scroll effect
-    const navbar = document.querySelector('.navbar');
-    let lastScrollTop = 0;
+    // const navbar = document.querySelector('.navbar');
+    // let lastScrollTop = 0;
     
-    window.addEventListener('scroll', function() {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    // window.addEventListener('scroll', function() {
+    //     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
-        // Add scrolled class for styling
-        if (scrollTop > 100) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
+    //     // Add scrolled class for styling
+    //     if (scrollTop > 100) {
+    //         navbar.classList.add('scrolled');
+    //     } else {
+    //         navbar.classList.remove('scrolled');
+    //     }
         
-        // Hide/show navbar on scroll
-        if (scrollTop > lastScrollTop && scrollTop > 200) {
-            navbar.style.transform = 'translateY(-100%)';
-        } else {
-            navbar.style.transform = 'translateY(0)';
-        }
+    //     // Hide/show navbar on scroll
+    //     if (scrollTop > lastScrollTop && scrollTop > 200) {
+    //         navbar.style.transform = 'translateY(-100%)';
+    //     } else {
+    //         navbar.style.transform = 'translateY(0)';
+    //     }
         
-        lastScrollTop = scrollTop;
-    });
+    //     lastScrollTop = scrollTop;
+    // });
     
     // Smooth scrolling for navigation links
-    const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+    // const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
     
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
+    // navLinks.forEach(link => {
+    //     link.addEventListener('click', function(e) {
+    //         e.preventDefault();
             
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
+    //         const targetId = this.getAttribute('href');
+    //         console.log(targetId);
+    //         const targetSection = document.querySelector(targetId);
             
-            if (targetSection) {
-                const offsetTop = targetSection.offsetTop - 100;
+    //         if (targetSection) {
+    //             const offsetTop = targetSection.offsetTop - 100;
                 
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
+    //             window.scrollTo({
+    //                 top: offsetTop,
+    //                 behavior: 'smooth'
+    //             });
+    //         }
+    //     });
+    // });
     
     // Interactive elements hover effects
-    const interactiveElements = document.querySelectorAll('.nav-link, .btn, .social-icon');
+    const interactiveElements = document.querySelectorAll('.btn, .social-icon');
     
     interactiveElements.forEach(element => {
         element.addEventListener('mouseenter', function() {
@@ -108,23 +109,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Logo click effect
-    const logo = document.querySelector('.navbar-brand');
+    // const logo = document.querySelector('.navbar-brand');
     
-    if (logo) {
-        logo.addEventListener('click', function(e) {
-            e.preventDefault();
+    // if (logo) {
+    //     logo.addEventListener('click', function(e) {
+    //         e.preventDefault();
             
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+    //         window.scrollTo({
+    //             top: 0,
+    //             behavior: 'smooth'
+    //         });
             
-            this.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                this.style.transform = '';
-            }, 150);
-        });
-    }
+    //         this.style.transform = 'scale(0.95)';
+    //         setTimeout(() => {
+    //             this.style.transform = '';
+    //         }, 150);
+    //     });
+    // }
     
     // Initialize Swiper Slider
     const swiperContainer = document.querySelector('.swiper-container');
