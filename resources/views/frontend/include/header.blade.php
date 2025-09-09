@@ -17,8 +17,8 @@
                         <div class="contact-item">
                             <span class="contact-label">Hotline |</span>
                             <span class="contact-value">
-                                <span class="contact-value">01766443322 (Debhata)</span><br>
-                                <span class="contact-value">01766443322 (Debhata)</span>
+                                <span class="contact-value">01919888316 (Satkhira)</span><br>
+                                <span class="contact-value">01926261818 (Debhata)</span>
                             </span>
                         </div>
                     </div>

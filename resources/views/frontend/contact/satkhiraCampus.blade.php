@@ -29,21 +29,21 @@
                             <i class="fas fa-phone"></i>
                             <div>
                                 <strong>Phone:</strong><br>
-                                +880200000000, 01700110011
+                                01919888316
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <strong>Email:</strong><br>
-                                info@blissia.edu.bd
+                                blissiabd@gmail.com
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-clock"></i>
                             <div>
                                 <strong>Office Hours:</strong><br>
-                                Mon–Fri, 9 AM – 5 PM
+                                Mon–Fri, 8 AM – 2 PM
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,6 @@
                     <div class="quick-links mt-4">
                         <h4>Quick Links</h4>
                         <ul class="list-unstyled">
-                            <li><a href="{{ route('frontend.contact.index') }}">All Campuses</a></li>
                             <li><a href="{{ route('frontend.contact.debhata') }}">Debhata Campus</a></li>
                         </ul>
                     </div>

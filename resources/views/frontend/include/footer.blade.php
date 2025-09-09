@@ -38,7 +38,7 @@
                         </div>
                         <div class="contact-item text-start">
                             <span class="contact-label">PHONE NUMBER</span>
-                            <span class="contact-value">+880200000000, 01700110011</span>
+                            <span class="contact-value">01919888316</span>
                         </div>
                         <div class="contact-item text-start">
                             <span class="contact-label">EMAIL</span>
@@ -57,7 +57,7 @@
                         </div>
                         <div class="contact-item text-start">
                             <span class="contact-label">PHONE NUMBER</span>
-                            <span class="contact-value">+02000000000, +8801700110011</span>
+                            <span class="contact-value">01926261818</span>
                         </div>
                         <div class="contact-item text-start">
                             <span class="contact-label">EMAIL</span>
